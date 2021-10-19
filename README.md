@@ -13,3 +13,10 @@ See `https-check.html` for the code.
 
 * If the user is using HTTPS, then any elements with the class `https-no` are hidden.  
 * If the user is _not_ using HTTPS, then any elements with the class `https-yes` are hidden.
+
+
+----
+
+ `v1`: `2020-10-18`
+
+
