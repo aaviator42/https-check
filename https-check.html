@@ -1,6 +1,9 @@
+<!-- 2020-10-18, @aaviator42 -->
 
-<br>HTTPS-check by @aaviator42
-<br>
+
+HTTPS-check by @aaviator42.
+<br><br>
+
 <span class="https-no">
 Not connected through HTTPS.
 </span>
@@ -9,10 +12,11 @@ Not connected through HTTPS.
 Connected through HTTPS.
 </span>
 
-<script>
-window.onload = ShowHideHTTPS();
 
-function CheckHideHTTPS(){
+<script>
+window.onload = HTTPScheck();
+
+function HTTPScheck(){
 	if (location.protocol === 'https:') {
 		var divsToHide = document.getElementsByClassName("https-no");
 	} else {
