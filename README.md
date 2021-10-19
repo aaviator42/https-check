@@ -7,7 +7,7 @@ The code contained in this repo is in the public domain.
 
 Occasionally, some functionality you want to include on a webpage requires HTTPS (for example, a "copy to clipboad" button that uses Javascript clipboad API). 
 
-If the user isn't using HTTPS, sometimes I just want to hide these elements to make the page layout neater. There's where HTTPS-check comes in.
+If the user isn't using HTTPS, sometimes I just want to hide these elements to make the page cleaner. There's where HTTPS-check comes in.
 
 See `https-check.html` for the code.
 
