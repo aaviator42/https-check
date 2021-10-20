@@ -14,6 +14,37 @@ See `https-check.html` for the code.
 * If the user is using HTTPS, then any elements with the class `https-no` are hidden.  
 * If the user is _not_ using HTTPS, then any elements with the class `https-yes` are hidden.
 
+-----
+
+Usage:
+
+```html
+<!-- include this in all your files where you want to use HTTPS-check! -->
+<script>
+window.onload = HTTPScheck();
+
+function HTTPScheck(){
+  if (location.protocol === 'https:') {
+    var divsToHide = document.getElementsByClassName("https-no");
+  } else {
+    var divsToHide = document.getElementsByClassName("https-yes");	
+  }
+  for(var i = 0; i < divsToHide.length; i++){
+    divsToHide[i].style.display = "none";
+  }
+}
+</script>
+
+<!-- the following will only show if connected through HTTP -->
+<span class="https-no">
+  Not connected through HTTPS.
+</span>
+
+<!-- the following will only show if connected through HTTPS -->
+<span class="https-yes">
+  Connected through HTTPS.
+</span>
+ ```
 
 ----
 
